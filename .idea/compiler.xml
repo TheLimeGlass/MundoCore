@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="MundoCore-Base_output" target="1.8" />
+      <module name="MundoCore-BaseEvent_output" target="1.8" />
+      <module name="MundoCore-Condition_output" target="1.8" />
+      <module name="MundoCore-Enum_output" target="1.8" />
+      <module name="MundoCore-EventScope_output" target="1.8" />
+      <module name="MundoCore-PropertyExpression_output" target="1.8" />
+      <module name="MundoCore-Reflection_output" target="1.8" />
+      <module name="MundoCore-ReflectiveRegistration_output" target="1.8" />
+      <module name="MundoCore-Registration_output" target="1.8" />
+      <module name="MundoCore-Scope_output" target="1.8" />
+      <module name="MundoCore-Util_output" target="1.8" />
+      <module name="MundoCore_main" target="1.8" />
+      <module name="MundoCore_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

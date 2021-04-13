@@ -1,0 +1,59 @@
+configure(subprojects - project(':MundoCore-GradlePlugin')) {
+    apply plugin: 'maven-publish'
+    apply plugin: 'java'
+
+    group 'us.tlatoani'
+    description '''\
+The core components used in Skript addons written by Tlatoani.
+Created to contain MundoSK code that was used in multiple, unrelated categories of code.
+'''
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+
+        //Spigot
+        maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+
+        //Bungeecord ChatComponent-API (depended on by Spigot)
+        maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+
+        //Skript
+        maven { url 'http://maven.njol.ch/repo/' }
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src']
+            }
+            resources {
+                srcDirs = []
+            }
+        }
+        test {
+            java {
+                srcDirs = []
+            }
+            resources {
+                srcDirs = []
+            }
+        }
+    }
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+        
+        repositories {
+            maven {
+                name 'TlatoaniRepo'
+                url '../../maven_repo'
+            }
+        }
+    }
+}

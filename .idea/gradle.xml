@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MundoCore-Base" />
+            <option value="$PROJECT_DIR$/MundoCore-BaseEvent" />
+            <option value="$PROJECT_DIR$/MundoCore-Condition" />
+            <option value="$PROJECT_DIR$/MundoCore-Enum" />
+            <option value="$PROJECT_DIR$/MundoCore-EventScope" />
+            <option value="$PROJECT_DIR$/MundoCore-GradlePlugin" />
+            <option value="$PROJECT_DIR$/MundoCore-GroupedList" />
+            <option value="$PROJECT_DIR$/MundoCore-PropertyExpression" />
+            <option value="$PROJECT_DIR$/MundoCore-Reflection" />
+            <option value="$PROJECT_DIR$/MundoCore-ReflectiveRegistration" />
+            <option value="$PROJECT_DIR$/MundoCore-Registration" />
+            <option value="$PROJECT_DIR$/MundoCore-Scope" />
+            <option value="$PROJECT_DIR$/MundoCore-Updating" />
+            <option value="$PROJECT_DIR$/MundoCore-Util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
