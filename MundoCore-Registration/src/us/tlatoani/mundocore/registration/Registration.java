@@ -140,10 +140,5 @@ public final class Registration {
         public String toVariableNameString(T t) {
             return toString(t, 0);
         }
-
-        @Override
-        public String getVariableNamePattern() {
-            return ".+";
-        }
     }
 }

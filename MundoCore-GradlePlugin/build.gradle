@@ -1,6 +1,13 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
 plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'maven-publish'
     id 'groovy'
+}
+
+configurations {
+    testImplementation.extendsFrom testShadow
 }
 
 group 'us.tlatoani'
@@ -15,12 +22,13 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile gradleApi()
-    compile localGroovy()
-    runtime group: 'com.github.jengelman.gradle.plugins', name: 'shadow', version: '2.0.4'
-    runtime group: 'gradle.plugin.net.minecrell', name: 'plugin-yml', version: '0.3.0'
-    runtime group: 'org.hidetake', name: 'gradle-ssh-plugin', version: '2.9.0'
+    testShadow group: 'junit', name: 'junit', version: '4.12'
+    shadow gradleApi()
+    shadow localGroovy()
+    //shadow group: 'com.github.jengelman.gradle.plugins', name: 'shadow', version: '2.0.4'
+    shadow group: 'gradle.plugin.net.minecrell', name: 'plugin-yml', version: '0.3.0'
+    shadow group: 'org.hidetake', name: 'gradle-ssh-plugin', version: '2.9.0'
+    shadow group: 'org.json', name: 'json', version: '20230227'
 }
 
 sourceSets {

@@ -139,8 +139,7 @@ public class DocumentationFileGenerator {
     }
 
     public static JSONArray fromStringList(List<String> list) {
-
-        JSONArray jsonArray = new JSONArray();
+    	JSONArray jsonArray = new JSONArray();
         for (String elem : list) {
             jsonArray.add(elem);
         }

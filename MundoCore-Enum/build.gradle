@@ -1,8 +1,13 @@
 version '1.0-BETA.3'
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT' // The Spigot API with no shadowing. Requires the OSS repo.
-    compileOnly 'ch.njol:skript:2.2-SNAPSHOT'
+	//Spigot/Bukkit
+	compileOnly (group: 'org.spigotmc', name: 'spigot-api', version: '1.19.4-R0.1-SNAPSHOT')
+
+	//Skript
+	compileOnly (group: 'com.github.SkriptLang', name: 'Skript', version: '2.7.0-beta2') {
+		transitive = false
+	}
     compileOnly project(':MundoCore-Base')
     compileOnly project(':MundoCore-Registration')
     compileOnly project(':MundoCore-ReflectiveRegistration')

@@ -1,5 +1,6 @@
 configure(subprojects - project(':MundoCore-GradlePlugin')) {
     apply plugin: 'maven-publish'
+    apply plugin: 'eclipse'
     apply plugin: 'java'
 
     group 'us.tlatoani'
@@ -20,7 +21,7 @@ Created to contain MundoSK code that was used in multiple, unrelated categories 
         maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 
         //Skript
-        maven { url 'http://maven.njol.ch/repo/' }
+        maven { url 'https://repo.skriptlang.org/releases' }
     }
 
     sourceSets {
